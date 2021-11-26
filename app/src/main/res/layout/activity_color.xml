@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="20dp"
+    android:id="@+id/ll_layoutColor"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+
+        <LinearLayout
+            android:id="@+id/ll_colorLletra"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_weight="1">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Color de la lletra"
+                android:textSize="10sp"
+                android:textColor="@color/black"
+                android:layout_margin="2dp"
+                />
+
+            <RadioGroup
+                android:id="@+id/rg_opcionsColorLletra"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:checkedButton="@+id/rb_opcions"
+                android:scaleX="0.7"
+                android:scaleY="0.7">
+
+                <RadioButton
+                    android:id="@+id/rb_ocl_vermell"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Vermell"
+                    android:textColor="@color/colorRed"
+                    android:buttonTint="@color/colorRed"
+                    />
+
+                <RadioButton
+                    android:id="@+id/rb_ocl_verd"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Verd"
+                    android:textColor="@color/colorGreen"
+                    android:buttonTint="@color/colorGreen"
+                    />
+
+                <RadioButton
+                    android:id="@+id/rb_ocl_blau"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Blau"
+                    android:textColor="@color/colorBlue"
+                    android:buttonTint="@color/colorBlue"
+                    />
+
+                <RadioButton
+                    android:id="@+id/rb_ocl_blanc"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Blanc"
+                    android:textColor="@color/colorSilver"
+                    android:buttonTint="@color/colorSilver"
+                    />
+
+                <RadioButton
+                    android:id="@+id/rb_ocl_negre"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Negre"
+                    android:textColor="@color/colorBlack"
+                    android:buttonTint="@color/colorBlack"
+                    />
+            </RadioGroup>
+
+            <EditText
+                android:id="@+id/et_cll"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="Codi hex sense #"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_colorFonsLletra"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_weight="1">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Color del fons de la lletra"
+                android:textSize="10sp"
+                android:textColor="@color/black"
+                android:layout_margin="2dp"
+                />
+
+            <RadioGroup
+                android:id="@+id/rg_opcionsColorFLletra"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:checkedButton="@+id/rb_opcions"
+                android:scaleX="0.7"
+                android:scaleY="0.7">
+
+                <RadioButton
+                    android:id="@+id/rb_ocfl_vermell"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Vermell"
+                    android:background="@color/colorRed"
+                    />
+
+                <RadioButton
+                    android:id="@+id/rb_ocfl_verd"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Verd"
+                    android:background="@color/colorGreen"
+                    />
+
+                <RadioButton
+                    android:id="@+id/rb_ocfl_blau"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Blau"
+                    android:background="@color/colorBlue"
+                    />
+
+                <RadioButton
+                    android:id="@+id/rb_ocfl_blanc"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Blanc"
+                    android:background="@color/white"
+                    />
+
+                <RadioButton
+                    android:id="@+id/rb_ocfl_negre"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Negre"
+                    android:textColor="@color/white"
+                    android:background="@color/black"
+                    />
+
+            </RadioGroup>
+
+            <EditText
+                android:id="@+id/et_cfll"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="Codi hex sense #"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_colorFons"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="10dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Color del fons"
+            android:textSize="10sp"
+            android:textColor="@color/black"
+            android:layout_margin="2dp"
+            />
+
+        <RadioGroup
+            android:id="@+id/rg_opcionsColorF"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:checkedButton="@+id/rb_opcions"
+            android:gravity="center_horizontal"
+            android:scaleX="0.6"
+            android:scaleY="0.6"
+            >
+
+            <RadioButton
+                android:id="@+id/rb_ocf_vermell"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Vermell"
+                />
+
+            <RadioButton
+                android:id="@+id/rb_ocf_verd"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Verd"
+                />
+
+            <RadioButton
+                android:id="@+id/rb_ocf_blau"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Blau"
+                />
+
+            <RadioButton
+                android:id="@+id/rb_ocf_blanc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Blanc"
+                />
+
+            <RadioButton
+                android:id="@+id/rb_ocf_negre"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Negre"
+                />
+
+        </RadioGroup>
+
+        <EditText
+            android:id="@+id/et_cf"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Codi hex sense #"/>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_aplicarColor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="aplicar"
+        android:layout_gravity="center"
+        android:text="aplicar"/>
+
+</LinearLayout>

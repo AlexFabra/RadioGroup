@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="mp">4sp</dimen>
+    <dimen name="p">5sp</dimen>
+    <dimen name="m">6sp</dimen>
+    <dimen name="g">7sp</dimen>
+    <dimen name="mg">8sp</dimen>
+</resources>
